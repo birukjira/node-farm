@@ -11,40 +11,178 @@
       rel="icon"
       href="https://em-content.zobj.net/source/apple/391/ear-of-corn_1f33d.png"
     />
-    <link rel="stylesheet" href="overviewStyle.css" />
+    <!-- <link rel="stylesheet" href="./overviewStyle.css" /> -->
     <title>NODE FARM</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+      }
+
+      html {
+        font-size: 62.5%;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Nunito Sans", sans-serif;
+        background: linear-gradient(to bottom right, #9be15d, #00e3ae);
+        min-height: 100vh;
+        padding: 5rem 5rem 10rem;
+        line-height: 1.7;
+        color: #555;
+      }
+
+      h1 {
+        font-family: "Megrim", sans-serif;
+        font-size: 6rem;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        word-spacing: 3px;
+        transform: skewY(-5deg);
+        margin-bottom: 8rem;
+      }
+
+      h1::before {
+        content: "";
+        display: block;
+        height: 65%;
+        width: 49%;
+        position: absolute;
+        background: linear-gradient(to bottom, #9be15d, #00e3ae);
+        z-index: -1;
+        top: 105%;
+        left: 50%;
+        transform: skewY(370deg) translate(-50%, -50%);
+        opacity: 0.8;
+      }
+
+      .container {
+        width: 96rem;
+        margin: 0 auto;
+      }
+
+      .card {
+        display: flex;
+        background: #fff;
+        margin-bottom: 5rem;
+        transform: skewX(-20deg);
+        box-shadow: 0 2rem 6rem 1rem rgba(0, 0, 0, 0.15);
+        transition: all 0.5s;
+      }
+
+      .card__emoji {
+        font-size: 5.5rem;
+        line-height: 1.2;
+        padding: 1.5rem 6rem 0.5rem 1.5rem;
+        letter-spacing: -4rem;
+        transform: skewX(20deg);
+      }
+
+      .card__title-box {
+        background: linear-gradient(to bottom, #9be15d, #00e3ae);
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        padding: 0 3rem;
+      }
+      .card__title {
+        font-family: "Megrim", sans-serif;
+        color: #fff;
+        font-size: 3.25rem;
+        transform: skewX(20deg);
+      }
+
+      .card__details {
+        display: flex;
+      }
+
+      .card__detail-box {
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        border-right: 1px solid #ddd;
+      }
+
+      .card__detail-box:last-child {
+        border: none;
+      }
+
+      .card__detail {
+        font-size: 1.8rem;
+        font-weight: 400;
+        padding: 1.75rem;
+        transform: skewX(20deg);
+      }
+
+      .card__detail--organic {
+        font-size: 1.9rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: transparent;
+        background-image: linear-gradient(to right, #9be15d, #00e3ae);
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+
+      .card__detail--price {
+        font-weight: 900;
+        font-size: 1.9rem;
+      }
+
+      .card__link:link,
+      .card__link:visited {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 auto;
+        background-color: #79e17b;
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 2.5rem;
+        transition: all 0.3s;
+      }
+
+      .card__link:hover,
+      .card__link:active {
+        background-color: #9be15d;
+      }
+
+      .card__link span {
+        transform: skewX(20deg);
+      }
+
+      .card:hover {
+        transform: skewX(-20deg) scale(1.08);
+        box-shadow: 0 3rem 8rem 2rem rgba(0, 0, 0, 0.15);
+      }
+
+      .emoji-left {
+        font-size: 2rem;
+        margin-right: 1rem;
+      }
+      .emoji-right {
+        font-size: 2rem;
+        margin-left: 1rem;
+      }
+
+      .not-organic {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <h1>🌽 Node Farm 🥦</h1>
 
-      <div class="card-container">
-        <figure class="card">
-          <div class="card__emoji">🥑🥑</div>
-
-          <div class="card__title-box">
-            <h2 class="card__title">Fresh Avocado</h2>
-          </div>
-
-          <div class="card__details">
-            <div class="card__details-box">
-              <h6 class="card__detail card__detail--organic">Organic!</h6>
-            </div>
-
-            <div class="card__detail-box">
-              <h6 class="card__detail">4 🥑 per 📦</h6>
-            </div>
-
-            <div class="card__detail-box">
-              <h6 class="card__detail card__detail--price">6.50$</h6>
-            </div>
-          </div>
-
-          <a href="#" class="card__link">
-            <span>Detail <i class="emoji-right">👉🏽</i></span>
-          </a>
-        </figure>
-      </div>
+      <div class="card-container">{{%CARD%}}</div>
     </div>
   </body>
 </html>
