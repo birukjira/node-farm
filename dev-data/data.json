@@ -2,7 +2,7 @@
   {
     "id": 0,
     "productName": "Fresh Avocados",
-    "image": "🥑",
+    "image": "https://em-content.zobj.net/source/apple/391/avocado_1f951.png",
     "from": "Spain",
     "nutrients": "Vitamin B, Vitamin K",
     "quantity": "4 🥑",
@@ -13,7 +13,7 @@
   {
     "id": 1,
     "productName": "Goat and Sheep Cheese",
-    "image": "🧀",
+    "image": "https://em-content.zobj.net/source/apple/391/cheese-wedge_1f9c0.png",
     "from": "Portugal",
     "nutrients": "Vitamin A, Calcium",
     "quantity": "250g",
@@ -24,7 +24,7 @@
   {
     "id": 2,
     "productName": "Apollo Broccoli",
-    "image": "🥦",
+    "image": "https://em-content.zobj.net/source/apple/391/broccoli_1f966.png",
     "from": "Portugal",
     "nutrients": "Vitamin C, Vitamin K",
     "quantity": "3 🥦",
@@ -35,7 +35,7 @@
   {
     "id": 3,
     "productName": "Baby Carrots",
-    "image": "🥕",
+    "image": "https://em-content.zobj.net/source/apple/391/carrot_1f955.png",
     "from": "France",
     "nutrients": "Vitamin A, Vitamin K",
     "quantity": "20 🥕",
@@ -46,7 +46,7 @@
   {
     "id": 4,
     "productName": "Sweet Corncobs",
-    "image": "🌽",
+    "image": "https://em-content.zobj.net/source/apple/391/ear-of-corn_1f33d.png",
     "from": "Germany",
     "nutrients": "Vitamin C, Magnesium",
     "quantity": "2 🌽",
